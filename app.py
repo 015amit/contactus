@@ -50,7 +50,7 @@ def result():
         mail.send_message('New message', 
                            sender= email, 
                            recipients = ['ak2383977@gmail.com'],
-                           body = Name + "\n" + subject + "\n" + message)
+                           body = Name + "\n" + email + "\n" + subject + "\n" + message)
         flash('Form submitted')
     '''return redirect(url_for('contact'))'''
     return render_template("contact.html", result="Sucess!")
